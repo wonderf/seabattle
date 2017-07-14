@@ -1,0 +1,48 @@
+    table {
+		opacity : 1;
+		border : 1px solid;
+		color: white;
+		-webkit-user-select: none;
+	}
+	body {
+		background: url(img/back.jpg);
+	}
+	#enemy .field{
+		opacity : 0.40;
+		border : 1px solid;
+		color:white;
+	}
+	#my .field {
+		opacity : 0.40;
+		border : 1px solid;
+		color:white;
+	}
+	#area {
+		width: 300px;
+		height: 30px;
+		position: fixed;
+		left: 100px; bottom: 150px;
+
+	}
+	input {
+	position: fixed; /* ������������� ��������� */
+    left: 100px; bottom: 180px;
+	}
+	#enemy .field:hover {
+    background-color: #f96c6c; /* ���� ���� ��� ��������� */
+    color: red; /* ���� ������ ��� ��������� */
+	cursor:crosshair;
+	border : 5px solid;
+	opacity : 0.9;
+   }
+   #status{
+       visibility:visible;
+       position:fixed;
+       top: 70px;
+       left: 460px;
+       font-size: 250%;
+       color:white;
+   }
+    #send {
+        visibility:hidden;
+    }

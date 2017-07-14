@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset = "utf-8" content = "text/html">
+  <title>Sea war</title>
+  <script type = "text/javascript" src = "js/tryTbl.js"></script>
+  <script type = "text/javascript" src = "js/senddata.js"></script>
+  <script type = "text/javascript" src = "js/postsheeps.js"></script>
+  <script type = "text/javascript" src = "js/jquery-1.12.4.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script type = "text/javascript">
+   mkTbl('25px', 11,"my");
+   mkTbl('25px', 11,"enemy");
+  </script>
+  <p><input id="send" onclick="getFire()" type="button" value="Отправить">
+  </p>
+  <script type = "text/javascript">
+  table = document.getElementById("my");
+  mmymatr = table.getElementsByClassName("field");
+  for(var i=0;i<mmymatr.length;++i){
+    mmymatr[i].addEventListener("mousedown", pushSheep);
+    mmymatr[i].addEventListener("mouseup", endSheep);
+    }
+  </script>
+ <div id="area">
+ <div id = 'bar' class='progress progress-striped active' aria-valuemin="0" aria-valuemax="100" ><div class='bar' style='width: 0%; visibility:visible;position: fixed;
+    left: 100px; bottom: 150px;'></div></div></div>
+ <label id = "status"></label>
+ </body>
+</html>
